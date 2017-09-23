@@ -1,0 +1,45 @@
+.center{
+    padding: 100px;
+    font-size: 60px;
+    width: 500px;
+    margin: auto;
+    text-align: center;
+}
+.blackscreen {
+    position: fixed;
+    top:0;
+    bottom:0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,.5);
+    display: none
+}
+.show_modal{
+    display: block;
+    margin: auto;
+    padding:3px 15px;
+    font-size: 20px;
+    border-radius: 4px;
+}
+.modalbox {
+    position: relative;
+    margin: auto;
+    margin-top:150px;
+    width: 500px;
+    height: 300px;
+    border:1px solid #eee;
+    border-radius:4px;
+    text-align: center;
+    font-size: 60px;
+    background-color: #f6f6f6;
+    z-index: 10;
+    display: none;
+}
+.hid_modal {
+    padding:3px 15px;
+    font-size: 20px;
+    border-radius: 4px;
+    position: absolute;
+    bottom:20px;
+    right:20px;
+}

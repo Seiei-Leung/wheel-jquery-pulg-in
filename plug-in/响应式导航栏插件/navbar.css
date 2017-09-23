@@ -1,0 +1,71 @@
+/*
+
+响应式导航栏插件
+使用时需导入navbar.css和navbar.js文件
+
+使用方法：
+
+- 外层定义导航栏`navbar`类
+
+- `navbar`类内嵌`navheader`,作为定义导航栏标题(使用`h1`标签定义)以及缩小按钮
+    -  缩小按钮，定义`nav_btn`类
+
+- `navbar`类内嵌`init-navlist`类和`navforjs`类(二者并列)，作为包裹`ul`元素的`div`类
+
+默认样式：
+- 响应宽度界限为：768px
+- 导航栏高：50px;背景色：#ddd;左右内边距：15px;字体:14px => 具体可更改`navbar`类样式
+- 若定义导航栏标题，标题水平向左
+- 缩小按钮水平向右，高：36px，左右内边距：10px  => 具体可更改`nav_btn`类样式
+
+*/
+
+.navbar{
+    box-sizing: border-box;
+    font-size: 14px;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background-color: #ddd;
+    padding:0px 15px;
+    position: relative;
+}
+.navheader h1,.init-navlist li,.init-navlist,.nav_btn{
+    display: inline-block;
+}
+.nav_btn{
+    float: right;
+    margin-top:7px;
+    height: 36px;
+    padding: 0px 10px;
+    line-height: 36px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+}
+.nav_btn:hover{
+    background-color: #aaa;
+}
+.init-navlist{
+    float: right;
+}
+.init-navlist li {
+    margin:0px 30px;
+}
+.navlist{
+    display: none;
+    position:absolute;
+    top:50px;
+    left: 0px;
+    width: 100%;
+    background-color: inherit;
+    text-align: center;
+    border-top: 1px solid #bbb;
+    z-index: 100;
+}
+.navlist li:hover{
+    background-color: #aaa
+}
+@media (min-width: 768px){
+    .navheader{display: inline-block;}
+    .nav_btn{display: none;}
+}

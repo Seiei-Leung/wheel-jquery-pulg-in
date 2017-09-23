@@ -1,0 +1,29 @@
+.center{
+    margin: auto;
+    width: 102px;
+}
+
+.hover{
+    margin-top:100px;
+    position: relative;
+}
+.hover_list{
+    width: 100px;
+    border: #ddd solid 1px;
+}
+.hover_list li{
+    text-align: center;
+    line-height: 30px;
+    font-size:20px;
+}
+.hover_list li:hover{
+    background-color: #ddd;
+}
+.pull_list{
+    font-size: 30px;
+    position: absolute;
+    top:0px;
+    left: 110px;
+    background-color: #ccc;
+    padding: 80px;
+}

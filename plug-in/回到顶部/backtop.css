@@ -1,0 +1,9 @@
+.backtop {
+    position: fixed;
+    bottom:20px;
+    right: 20px;
+}
+.backtop_btn{
+    padding:20px;
+    background-color: rgba(0,0,0,.1);
+}

@@ -1,0 +1,19 @@
+form {
+    padding: 30px 10px;
+    margin: 30px auto;
+    background-color: #ddd;
+    width: 200px;
+    font-size: 20px;
+    border-radius: 4px;
+}
+form div{
+    line-height: 30px;
+    border-radius: 4px;
+    padding-left:10px; 
+}
+form div:hover{
+    background-color: #aaa
+}
+form input{
+    margin: 10px;
+}
